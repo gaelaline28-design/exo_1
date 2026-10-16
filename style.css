@@ -1,0 +1,83 @@
+/* ============================================
+   STYLE GÉNÉRAL DE LA PAGE
+   ============================================ */
+
+body {
+  font-family: Arial, sans-serif; /* police de caractères (sans-serif = police de secours) */
+  margin: 20px;                   /* espace de 20px entre le bord de la fenêtre et le contenu */
+}
+
+/* ============================================
+   TITRE : en bleu et en majuscules
+   ============================================ */
+
+h1 {
+  color: blue;                /* couleur du texte : bleu */
+  text-transform: uppercase;  /* transforme tout le texte en MAJUSCULES, même si le HTML est en minuscules */
+}
+
+/* ============================================
+   DIV 1 : bordure bleue et fond rouge
+   ============================================ */
+
+.bloc-rouge {
+  height: 100px;              /* hauteur de la boîte */
+  border: 3px solid blue;     /* bordure : épaisseur 3px, trait plein (solid), couleur bleue */
+  background-color: red;      /* couleur de fond : rouge */
+  border-radius: 15px;        /* arrondit les coins de la boîte */
+  margin-bottom: 20px;        /* espace de 20px sous la boîte pour l'éloigner de l'élément suivant */
+}
+
+/* ============================================
+   TEXTE : petit et centré
+   ============================================ */
+
+.texte {
+  font-size: 12px;            /* taille du texte : petite */
+  text-align: center;         /* centre le texte horizontalement */
+  margin-bottom: 20px;        /* espace sous le paragraphe */
+}
+
+/* ============================================
+   DIVS VERTES : style commun
+   (s'applique aux deux boîtes grâce à la classe "moitie")
+   ============================================ */
+
+.moitie {
+  width: 50%;                 /* largeur = la moitié de la page */
+  height: 100px;              /* hauteur de la boîte */
+  background-color: green;    /* couleur de fond : vert */
+  border-radius: 15px;        /* coins arrondis */
+  margin-bottom: 20px;        /* espace sous la boîte */
+}
+
+/* Première div verte : bordure bleue, à gauche (position par défaut) */
+.moitie-gauche {
+  border: 3px solid blue;     /* bordure bleue de 3px */
+}
+
+/* Deuxième div verte : bordure noire, centrée */
+.moitie-centre {
+  border: 3px solid black;    /* bordure noire de 3px */
+  margin-left: auto;          /* marge automatique à gauche...                */
+  margin-right: auto;         /* ...et à droite : le navigateur répartit l'espace
+                                 de façon égale, ce qui centre la boîte        */
+}
+
+/* ============================================
+   BOÎTE DES LIENS
+   ============================================ */
+
+.liens {
+  border: 2px solid black;       /* bordure noire de 2px */
+  border-radius: 10px;           /* coins arrondis */
+  padding: 10px;                 /* espace À L'INTÉRIEUR de la boîte, entre la bordure et les liens */
+  display: flex;                 /* met les éléments enfants (les liens) côte à côte sur une ligne */
+  justify-content: space-around; /* répartit les liens avec un espace égal autour de chacun */
+}
+
+/* Les liens à l'intérieur de la boîte : noirs et non soulignés */
+.liens a {
+  color: black;                  /* couleur du texte : noir (par défaut un lien est bleu) */
+  text-decoration: none;         /* supprime le soulignement par défaut des liens */
+}

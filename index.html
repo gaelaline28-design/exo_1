@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Indique au navigateur que c'est un document HTML5 -->
+<html lang="fr">
+<!-- <html> : balise racine ; lang="fr" indique que la page est en français -->
+
+<head>
+  <!-- <head> : informations sur la page (non affichées dans la page elle-même) -->
+  <meta charset="UTF-8">
+  <!-- Encodage des caractères : permet d'afficher correctement les accents (é, à, ç...) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Adapte la page à la largeur de l'écran (utile sur téléphone) -->
+  <title>Titre de ma page</title>
+  <!-- Titre affiché dans l'onglet du navigateur -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Relie le fichier CSS à cette page : c'est lui qui gère l'apparence -->
+</head>
+
+<body>
+  <!-- <body> : tout ce qui est visible dans la page -->
+  
+    <h1>Titre de ma page</h1>
+  <!-- <h1> : titre principal de la page (le CSS le met en bleu et en majuscules) -->
+  
+    <div class="bloc-rouge"></div>
+  <!-- <div> : boîte vide qui sert de conteneur.
+       class="bloc-rouge" : nom qui permet au CSS de cibler cette boîte
+       (bordure bleue, fond rouge) -->
+
+  <p class="texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <!-- <p> : paragraphe de texte (le CSS le rend petit et centré) -->
+ 
+    <div class="moitie moitie-gauche"></div>
+  <!-- Boîte verte qui prend la moitié de la page, collée à gauche.
+       Deux classes séparées par un espace :
+       - "moitie" : style commun aux deux boîtes vertes (largeur, hauteur, fond)
+       - "moitie-gauche" : style propre à celle-ci (bordure bleue) -->
+
+  <div class="moitie moitie-centre"></div>
+  <!-- Deuxième boîte verte, centrée, avec une bordure noire.
+       Elle partage la classe "moitie" avec la précédente -->
+
+  <nav class="liens">
+    <!-- <nav> : boîte de navigation, elle contient les liens -->
+    <!-- <a> : lien cliquable ; href="..." est l'adresse vers laquelle il redirige (ici Google) -->
+      <a href="https://www.google.com">Lien</a>
+      <a href="https://www.linkedin.com/in/sandrine-andr%C3%A9/">Lien</a>
+      <a href="https://www.simplon.co/">Lien</a>
+
+  </nav>
+</body>
+</html>
